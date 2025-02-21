@@ -1,0 +1,34 @@
+<template>
+    <lightning-card title="Search Contact - WIRE a Property or Function">
+        <lightning-input label="Enter the Search Text" type="search" value={searchKey}
+            onchange={handleOnChange}></lightning-input>
+
+
+        <!--Wire a Property-->
+        
+        <template if:true={contact.data}>
+            <template for:each={contact.data} for:item="con">
+                <p key={con.Id}>{con.Name}</p>
+                <p key={con.Id}>{con.Phone}</p>
+                <p key={con.Id}>{con.Email}</p>
+            </template>
+
+            <lightning-datatable key-field="Id" data={contact.data} columns={col}></lightning-datatable>
+        </template>
+        
+        <template if:true={contact.error}>
+            <p>Sorry, we cannot display your records due to an error: {contact.error}</p>
+        </template>
+    
+        <!--Wire a function-->
+
+        <template for:each={rupData} for:item="rc">
+
+            <p key= {rc.Id}>Contact Name : {rc.Name}</p>
+
+        </template>
+        
+
+
+    </lightning-card>
+</template>

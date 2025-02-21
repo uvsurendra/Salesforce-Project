@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Data table with wire">
+
+        <lightning-datatable key-field="Id" data={storeData.data} columns={col} onsave={handleSave} draft-values={draftValues}></lightning-datatable>
+        <lightning-datatable key-field="Id" data={storeAccData.data} columns={acccol}></lightning-datatable>
+
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,20 @@
+.form-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.slds-input {
+    font-size: 14px; /* Reduce input field size */
+    height: 30px; /* Set input field height */
+    width: 250px; /* Adjust width */
+}
+
+.slds-form-element {
+    margin-bottom: 10px; /* Space between fields */
+}
+
+/* Style buttons */
+.slds-button {
+    padding: 5px 15px;
+    font-size: 14px;
+}

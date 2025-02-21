@@ -1,0 +1,34 @@
+<template>
+    <!-- <div>
+        <lightning-card title="LWC LDS RecordForm with Custom Fields" class="mybox" style="background-color:rgb(249, 136, 105);color:rgb(9, 9, 9);font-size:10px;">
+
+            <lightning-record-form
+    
+            object-api-name={objectnm}
+            fields={myfields}
+            record-id={recordId}
+    
+            
+            >
+    
+            </lightning-record-form>
+        </lightning-card>
+    </div> -->
+
+    <div class="form-container">
+        
+        <lightning-card title="LWC LDS RecordForm with Custom Fields">
+            <lightning-record-form
+                object-api-name={objectnm}
+                fields={myfields}
+                record-id={recordId}
+                mode="edit"
+                class="custom-form"
+            ></lightning-record-form>
+        </lightning-card>
+        \
+    </div>
+   
+    
+    
+</template>
